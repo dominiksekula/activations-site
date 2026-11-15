@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Activations · Oprogramowanie szyte na miarę Twojej produkcji</title>
+  <meta name="description" content="Zastępujemy arkusze, wydruki i przepisywanie danych prostymi narzędziami dopasowanymi do tego, jak naprawdę pracuje Twoja firma produkcyjna.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f1b2d'/%3E%3Cpath d='M9 22l7-12 7 12' stroke='%23f26b1d' stroke-width='3.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- Ikony -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="2.5"/><circle cx="18" cy="5" r="2.5"/><path d="M8.5 19H17a3.5 3.5 0 0 0 0-7H7a3.5 3.5 0 0 1 0-7h8.5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/></symbol>
+    <symbol id="i-files" viewBox="0 0 24 24"><path d="M9 3h7l4 4v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M16 3v4h4M4 7v12a2 2 0 0 0 2 2h9"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></symbol>
+    <symbol id="i-gauge" viewBox="0 0 24 24"><path d="M4 18a8 8 0 1 1 16 0M12 18l4-6"/></symbol>
+    <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+    <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8M4 4v4h4M4 13a8 8 0 0 0 14.3 4.9L20 16M20 20v-4h-4"/></symbol>
+    <symbol id="i-support" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M5.6 5.6l3.9 3.9M14.5 14.5l3.9 3.9M18.4 5.6l-3.9 3.9M9.5 14.5l-3.9 3.9"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01M7 16.5h.01M11 7.5h6M11 16.5h6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M9 10h6M9 14h6M9 18h3"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-badge" viewBox="0 0 24 24"><circle cx="12" cy="10" r="6"/><path d="M9.5 10l1.8 1.8 3.2-3.6M8.5 15.5 7 22l5-2.5 5 2.5-1.5-6.5"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5v-9zM3 7.5l9 4.5 9-4.5M12 12v9"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M15 4a5 5 0 0 0-4.6 6.9L3 18.3 5.7 21l7.4-7.4A5 5 0 0 0 20 9l-3 1-2-2 1-3z"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-4M12 16V8M16 16v-6"/></symbol>
+    <symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 3v5M15 3v5M6 8h12v3a6 6 0 0 1-12 0V8zM12 17v4"/></symbol>
+    <symbol id="i-exit" viewBox="0 0 24 24"><path d="M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4M10 16l-4-4 4-4M6 12h10"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M14 9l2 2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-qr" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3"/></symbol>
+  </defs>
+</svg>
+
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="logo" aria-label="Activations: strona główna">
+      <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M9 22l7-12 7 12"/></svg></span>
+      <span class="brand-name">Activations</span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Nawigacja główna">
+      <a href="#problem">Problem</a>
+      <a href="#podejscie">Podejście</a>
+      <a href="#jak-pracujemy">Jak pracujemy</a>
+      <a href="#co-budujemy">Co budujemy</a>
+      <a href="#wspolpraca">Współpraca</a>
+      <a href="#kontakt" class="btn btn-sm btn-primary">Bezpłatna rozmowa</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Dla małych i średnich firm produkcyjnych</p>
+        <h1>Oprogramowanie szyte na&nbsp;miarę <span class="hl">Twojej produkcji.</span></h1>
+        <p class="lead">Zamieniamy arkusze, wydruki i przepisywanie danych w proste narzędzia dopasowane do tego, jak naprawdę pracuje Twoja firma. Bez wielkiego systemu. Bez rewolucji.</p>
+        <div class="hero-cta">
+          <a href="#kontakt" class="btn btn-primary">Umów bezpłatną rozmowę <svg class="ic"><use href="#i-arrow"/></svg></a>
+          <a href="#problem" class="btn btn-ghost">Zobacz, co zmieniamy</a>
+        </div>
+        <ul class="hero-points">
+          <li><svg class="ic"><use href="#i-check"/></svg>Pierwsza rozmowa i diagnoza bezpłatnie</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Pierwsze efekty w tygodniach</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Stały, przewidywalny koszt miesięczny</li>
+        </ul>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 560 470" class="hero-svg">
+          <defs>
+            <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.3" fill="var(--dot)"/></pattern>
+            <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0f1b2d" flood-opacity=".16"/></filter>
+            <filter id="sh2" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0f1b2d" flood-opacity=".14"/></filter>
+          </defs>
+          <rect width="560" height="470" fill="url(#dots)"/>
+
+          <!-- przepływ: papier -> tablet -->
+          <g class="flow" fill="none" stroke-width="2.2" stroke-linecap="round">
+            <path d="M150 120 C 210 120, 210 170, 268 170"/>
+            <path d="M160 238 C 215 238, 215 232, 268 232"/>
+            <path d="M140 350 C 210 350, 210 294, 268 294"/>
+          </g>
+
+          <!-- papiery -->
+          <g class="papers">
+            <g class="paper p1" filter="url(#sh2)">
+              <g transform="translate(38 62) rotate(-7)">
+                <rect width="118" height="146" rx="4" fill="var(--paper-sheet)" stroke="var(--paper-edge)"/>
+                <rect x="12" y="14" width="60" height="7" rx="2" fill="var(--paper-ink)"/>
+                <g stroke="var(--paper-line)" stroke-width="2"><path d="M12 36h94M12 50h94M12 64h94M12 78h94M12 92h94M12 106h94"/><path d="M48 30v84M80 30v84"/></g>
+                <path d="M84 57 l14 10 M98 57 l-14 10" stroke="#d9480f" stroke-width="2.4" stroke-linecap="round"/>
+                <circle cx="88" cy="122" r="14" fill="none" stroke="#b8946a" stroke-opacity=".45" stroke-width="3"/>
+              </g>
+            </g>
+            <g class="paper p2" filter="url(#sh2)">
+              <g transform="translate(26 186) rotate(5)">
+                <rect width="126" height="104" rx="4" fill="var(--paper-sheet)" stroke="var(--paper-edge)"/>
+                <rect x="10" y="10" width="106" height="14" fill="#1f7a46" opacity=".85"/>
+                <text x="16" y="21" font-size="9" font-family="Inter" fill="#fff" font-weight="600">plan_v3_FINAL(2).xlsx</text>
+                <g fill="var(--paper-line)"><rect x="10" y="30" width="106" height="8"/><rect x="10" y="44" width="106" height="8"/><rect x="10" y="58" width="106" height="8"/><rect x="10" y="72" width="106" height="8"/></g>
+                <rect x="60" y="44" width="30" height="8" fill="#f8d36b"/>
+                <rect x="30" y="72" width="40" height="8" fill="#f3a3a3"/>
+              </g>
+            </g>
+            <g class="paper p3" filter="url(#sh2)">
+              <g transform="translate(46 302) rotate(-3)">
+                <rect width="104" height="110" rx="4" fill="var(--paper-sheet)" stroke="var(--paper-edge)"/>
+                <text x="12" y="24" font-size="15" font-family="Caveat" fill="#2b4a8a">Pilne!! dzwonić</text>
+                <text x="12" y="44" font-size="15" font-family="Caveat" fill="#2b4a8a">brak blachy 4mm?</text>
+                <path d="M12 60h80M12 74h80M12 88h56" stroke="var(--paper-line)" stroke-width="2"/>
+                <g transform="translate(64 66) rotate(-12)"><rect width="38" height="16" rx="2" fill="none" stroke="#c0392b" stroke-width="1.6"/><text x="5" y="12" font-size="9" font-family="Inter" font-weight="700" fill="#c0392b">KOPIA</text></g>
+              </g>
+            </g>
+          </g>
+
+          <!-- tablet -->
+          <g class="tablet" filter="url(#sh)">
+            <rect x="262" y="58" width="282" height="356" rx="22" fill="var(--device)"/>
+            <rect x="274" y="70" width="258" height="332" rx="12" fill="var(--screen)"/>
+            <rect x="274" y="70" width="258" height="40" rx="12" fill="var(--screen-head)"/>
+            <rect x="274" y="96" width="258" height="14" fill="var(--screen-head)"/>
+            <text x="290" y="95" font-size="13" font-family="Manrope" font-weight="700" fill="var(--screen-head-ink)">Zlecenia · dziś</text>
+            <circle cx="510" cy="90" r="5" fill="#22c55e" class="live"/>
+
+            <g font-family="Inter" font-size="10.5">
+              <g class="row r1">
+                <rect x="288" y="124" width="230" height="44" rx="8" fill="var(--row)"/>
+                <text x="300" y="142" font-weight="600" fill="var(--ink)">Z-117 · Wspornik WS-40</text>
+                <rect x="300" y="151" width="120" height="6" rx="3" fill="var(--track)"/><rect class="grow" x="300" y="151" width="72" height="6" rx="3" fill="#2563eb"/>
+                <rect x="448" y="134" width="58" height="18" rx="9" fill="#dbeafe"/><text x="459" y="146.5" fill="#1d4ed8" font-weight="600">W toku</text>
+              </g>
+              <g class="row r2">
+                <rect x="288" y="176" width="230" height="44" rx="8" fill="var(--row)"/>
+                <text x="300" y="194" font-weight="600" fill="var(--ink)">Z-118 · Rama RM-2</text>
+                <rect x="300" y="203" width="120" height="6" rx="3" fill="var(--track)"/><rect class="grow" x="300" y="203" width="120" height="6" rx="3" fill="#16a34a"/>
+                <rect x="448" y="186" width="58" height="18" rx="9" fill="#dcfce7"/><text x="458" y="198.5" fill="#15803d" font-weight="600">Gotowe</text>
+              </g>
+              <g class="row r3">
+                <rect x="288" y="228" width="230" height="44" rx="8" fill="var(--row)"/>
+                <text x="300" y="246" font-weight="600" fill="var(--ink)">Z-114 · Obudowa OB-7</text>
+                <rect x="300" y="255" width="120" height="6" rx="3" fill="var(--track)"/><rect class="grow" x="300" y="255" width="26" height="6" rx="3" fill="#d97706"/>
+                <rect x="440" y="238" width="66" height="18" rx="9" fill="#fef3c7"/><text x="449" y="250.5" fill="#b45309" font-weight="600">Materiał</text>
+              </g>
+            </g>
+            <!-- wykres -->
+            <text x="290" y="300" font-size="10.5" font-family="Inter" font-weight="600" fill="var(--muted)">Wykonane w tym tygodniu</text>
+            <g class="bars" fill="var(--brand)">
+              <rect x="296" y="330" width="22" height="50" rx="4"/>
+              <rect x="330" y="318" width="22" height="62" rx="4"/>
+              <rect x="364" y="338" width="22" height="42" rx="4"/>
+              <rect x="398" y="312" width="22" height="68" rx="4"/>
+              <rect x="432" y="324" width="22" height="56" rx="4" opacity=".35"/>
+              <rect x="466" y="324" width="22" height="56" rx="4" opacity=".18"/>
+            </g>
+            <path d="M290 380.5h228" stroke="var(--track)"/>
+          </g>
+
+          <!-- etykieta QR -->
+          <g class="qr" filter="url(#sh2)">
+            <g transform="translate(468 380) rotate(6)">
+              <rect width="78" height="70" rx="6" fill="#fff" stroke="#e5e7eb"/>
+              <g fill="#0f1b2d">
+                <rect x="10" y="10" width="14" height="14"/><rect x="13" y="13" width="8" height="8" fill="#fff"/><rect x="15" y="15" width="4" height="4"/>
+                <rect x="30" y="10" width="14" height="14"/><rect x="33" y="13" width="8" height="8" fill="#fff"/><rect x="35" y="15" width="4" height="4"/>
+                <rect x="10" y="30" width="14" height="14"/><rect x="13" y="33" width="8" height="8" fill="#fff"/><rect x="15" y="35" width="4" height="4"/>
+                <rect x="30" y="30" width="4" height="4"/><rect x="38" y="30" width="6" height="4"/><rect x="30" y="38" width="6" height="6"/><rect x="40" y="38" width="4" height="6"/>
+              </g>
+              <text x="50" y="22" font-size="8" font-family="Inter" font-weight="700" fill="#0f1b2d">Z-117</text>
+              <text x="50" y="33" font-size="7" font-family="Inter" fill="#6b7a90">240 szt.</text>
+              <text x="10" y="60" font-size="7" font-family="Inter" fill="#6b7a90">Spawanie · St. 3</text>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROBLEM: podróż karty zlecenia ============ -->
+  <section class="journey" id="problem" aria-labelledby="journey-title">
+    <div class="journey-sticky">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Brzmi znajomo?</p>
+          <h2 id="journey-title">Prześledźmy jedno zlecenie</h2>
+          <p class="sub">Tak w wielu firmach wygląda droga jednego zamówienia przez zakład. Przewiń dalej i zobacz każdy etap.</p>
+        </div>
+
+        <div class="mode-switch" role="tablist" aria-label="Wariant procesu">
+          <button role="tab" aria-selected="true" data-mode="today" class="active">Dziś</button>
+          <button role="tab" aria-selected="false" data-mode="us">Z nami</button>
+          <span class="mode-pill" aria-hidden="true"></span>
+        </div>
+
+        <div class="journey-stage" data-mode="today">
+          <svg viewBox="0 0 1000 260" class="journey-svg" aria-hidden="true">
+            <path id="jPathBg" class="j-path-bg" d="M70,180 C180,180 180,80 290,80 S400,180 510,180 S620,80 730,80 S860,180 930,180"/>
+            <path id="jPath" class="j-path" d="M70,180 C180,180 180,80 290,80 S400,180 510,180 S620,80 730,80 S860,180 930,180"/>
+            <g id="jStations"></g>
+            <g id="jToken" class="j-token">
+              <g class="tok-paper"><rect x="-15" y="-19" width="30" height="38" rx="3" fill="#fffdf6" stroke="#cbbf9e"/><path d="M-9 -10h18M-9 -3h18M-9 4h12M-9 11h15" stroke="#b9ad8d" stroke-width="2"/></g>
+              <g class="tok-data"><circle r="15" fill="var(--brand)"/><circle r="24" fill="var(--brand)" opacity=".18"/><path d="M-6 0l4 4 8-8" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+            </g>
+          </svg>
+          <ol class="j-dots" id="jDots" aria-hidden="true"></ol>
+
+          <div class="journey-info">
+            <div class="j-card" aria-live="polite">
+              <div class="j-step"><span id="jIdx">1</span>/5</div>
+              <div>
+                <h3 id="jName">Biuro</h3>
+                <p id="jText">Zamówienie przychodzi mailem. Ktoś przepisuje je do arkusza i drukuje kartę zlecenia.</p>
+              </div>
+            </div>
+            <div class="j-counters">
+              <div class="counter"><strong id="cHand">0</strong><span id="cHandL">przekazań z rąk do rąk</span></div>
+              <div class="counter"><strong id="cCopy">0</strong><span id="cCopyL">razy przepisane dane</span></div>
+              <div class="counter"><strong id="cLive">?</strong><span id="cLiveL">czy biuro wie, co dzieje się teraz</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OBJAWY ============ -->
+  <section class="section" aria-labelledby="symptoms-title">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow">Koszt, którego nie widać w żadnej tabeli</p>
+        <h2 id="symptoms-title">Papier i arkusze kosztują więcej, niż się wydaje</h2>
+      </div>
+      <div class="symptoms">
+        <article class="symptom reveal">
+          <div class="s-ico"><svg class="ic"><use href="#i-phone"/></svg></div>
+          <h3>„Na jakim etapie jest zlecenie?”</h3>
+          <p>Telefony, chodzenie po hali i pytanie ludzi. Klient czeka na odpowiedź, a Ty na informację.</p>
+        </article>
+        <article class="symptom reveal">
+          <div class="s-ico"><svg class="ic"><use href="#i-files"/></svg></div>
+          <h3>Te same dane wpisywane kilka razy</h3>
+          <p>Każde przepisanie to szansa na pomyłkę. Pomyłki wracają jako braki, poprawki i reklamacje.</p>
+        </article>
+        <article class="symptom reveal">
+          <div class="s-ico"><svg class="ic"><use href="#i-chart"/></svg></div>
+          <h3>Raport powstaje dniami</h3>
+          <p>Ktoś skleja dane z kilku arkuszy. Decyzje zapadają na wyczucie albo na danych sprzed tygodnia.</p>
+        </article>
+        <article class="symptom reveal">
+          <div class="s-ico"><svg class="ic"><use href="#i-users"/></svg></div>
+          <h3>Wszystko wie jedna osoba</h3>
+          <p>Proces działa, bo ktoś pilnuje. Urlop lub choroba tej osoby i zaczynają się problemy.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRZED / PO ============ -->
+  <section class="section section-tint" id="przed-po" aria-labelledby="ba-title">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow">Przed i po</p>
+        <h2 id="ba-title">Ta sama karta zlecenia. Dwa światy.</h2>
+        <p class="sub">Przeciągnij suwak i porównaj.</p>
+      </div>
+
+      <div class="ba reveal" id="ba" style="--pos:50%">
+        <!-- PO (spód) -->
+        <div class="ba-layer ba-after">
+          <span class="ba-tag ba-tag-r">Z nami</span>
+          <div class="tablet-frame">
+            <div class="app">
+              <div class="app-top">
+                <div>
+                  <div class="app-kicker">Zlecenie Z-117 · Stal-Mont</div>
+                  <div class="app-title">Wspornik WS-40 · 240 szt.</div>
+                </div>
+                <span class="chip run">W toku</span>
+              </div>
+              <ol class="stepper">
+                <li class="done"><span></span>Cięcie</li>
+                <li class="done"><span></span>Gięcie</li>
+                <li class="active"><span></span>Spawanie</li>
+                <li><span></span>Malowanie</li>
+                <li><span></span>Kontrola</li>
+                <li><span></span>Wysyłka</li>
+              </ol>
+              <div class="app-grid">
+                <div class="app-card">
+                  <div class="app-label">Spawanie · Stanowisko 3</div>
+                  <div class="big-num">120 <small>/ 240 szt.</small></div>
+                  <div class="progress"><i style="width:50%"></i></div>
+                  <div class="app-btns"><span class="abtn primary">Zgłoś postęp</span><span class="abtn">Zgłoś problem</span></div>
+                </div>
+                <div class="app-card">
+                  <div class="app-label">Historia</div>
+                  <ul class="feed">
+                    <li><b>10:42</b> Gięcie zakończone · 240 szt.</li>
+                    <li><b>09:15</b> Blacha 4 mm zarezerwowana</li>
+                    <li><b>wczoraj</b> Cięcie zakończone · 240 szt.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="app-foot"><svg class="ic"><use href="#i-qr"/></svg> Zeskanuj etykietę, żeby otworzyć zlecenie na dowolnym stanowisku</div>
+            </div>
+          </div>
+        </div>
+        <!-- PRZED (wierzch, przycinany) -->
+        <div class="ba-layer ba-before">
+          <span class="ba-tag">Dziś</span>
+          <div class="desk">
+            <div class="sheet">
+              <div class="sheet-head">
+                <div>KARTA ZLECENIA PRODUKCYJNEGO</div>
+                <div class="hand">Nr 117 / 11</div>
+              </div>
+              <div class="sheet-meta">
+                <div>Klient: <span class="hand">Stal-Mont</span></div>
+                <div>Wyrób: <span class="hand">Wspornik WS-40</span></div>
+                <div>Ilość: <span class="hand"><s>250</s> 240</span></div>
+              </div>
+              <table class="sheet-table">
+                <thead><tr><th>Operacja</th><th>Stanowisko</th><th>Data</th><th>Podpis</th><th>Ilość</th></tr></thead>
+                <tbody>
+                  <tr><td>Cięcie</td><td class="hand">Piła 2</td><td class="hand">12.11</td><td class="hand">JK</td><td class="hand">250</td></tr>
+                  <tr><td>Gięcie</td><td class="hand">Krawędziarka</td><td class="hand">13.11</td><td class="hand">?</td><td class="hand smudge">24?</td></tr>
+                  <tr><td>Spawanie</td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td>Malowanie</td><td class="hand">zlecone</td><td></td><td></td><td></td></tr>
+                  <tr><td>Kontrola</td><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+              </table>
+              <div class="sheet-notes hand">Pilne!! dzwonić do p. Marka<br>brak blachy 4mm?</div>
+              <div class="stamp">KOPIA 2</div>
+              <div class="coffee"></div>
+            </div>
+            <div class="sticky-note hand">Która wersja jest aktualna??</div>
+          </div>
+        </div>
+        <div class="ba-handle" aria-hidden="true"><span><svg viewBox="0 0 24 24"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></span></div>
+        <input type="range" min="0" max="100" value="50" class="ba-range" id="baRange" aria-label="Porównanie: przesuń, aby zobaczyć wersję przed i po">
+      </div>
+
+      <div class="ba-legend">
+        <div><strong>Dziś:</strong> dane na papierze, kilka kopii, status znany tylko na hali.</div>
+        <div><strong>Z nami:</strong> jedno źródło prawdy, postęp zgłaszany jednym dotknięciem, historia zawsze pod ręką.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PODEJŚCIE: zamiast dużego systemu ============ -->
+  <section class="section" id="podejscie" aria-labelledby="fit-title">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow">Nasze podejście</p>
+        <h2 id="fit-title">Nie zmieniamy Twojej firmy pod system.<br>Budujemy system pod Twoją firmę.</h2>
+        <p class="sub">Duże systemy są projektowane dla wszystkich naraz. Płacisz za setki funkcji, uczysz się ich, konfigurujesz je, a na co dzień używasz kilkunastu.</p>
+      </div>
+
+      <div class="fit reveal" id="fit">
+        <div class="fit-col">
+          <div class="fit-title"><span class="dot muted"></span>Typowy duży system</div>
+          <div class="fit-grid big" id="gridBig" aria-hidden="true"></div>
+          <p class="fit-caption"><b class="count" data-to="120">0</b> funkcji, z których używasz <b>14</b></p>
+        </div>
+        <div class="fit-vs" aria-hidden="true">vs</div>
+        <div class="fit-col">
+          <div class="fit-title"><span class="dot"></span>Rozwiązanie na miarę</div>
+          <div class="fit-grid small" id="gridSmall" aria-hidden="true"></div>
+          <p class="fit-caption"><b>14</b> funkcji, z których używasz <b>14</b>. Kolejne dodajemy, gdy będą potrzebne.</p>
+        </div>
+      </div>
+
+      <div class="compare reveal">
+        <div class="compare-row compare-head"><div></div><div>Duży system</div><div>Na miarę</div></div>
+        <div class="compare-row"><div>Kto się dopasowuje</div><div>Firma do systemu</div><div>System do firmy</div></div>
+        <div class="compare-row"><div>Pierwsze efekty</div><div>Po miesiącach</div><div>Po kilku tygodniach</div></div>
+        <div class="compare-row"><div>Nauka obsługi</div><div>Szkolenia z całego systemu</div><div>Kilkanaście minut przy stanowisku</div></div>
+        <div class="compare-row"><div>Koszt na start</div><div>Duża jednorazowa inwestycja</div><div>Stały abonament miesięczny</div></div>
+        <div class="compare-row"><div>Co z obecnymi narzędziami</div><div>Często do wymiany</div><div>Łączymy z tym, co działa</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JAK PRACUJEMY ============ -->
+  <section class="section section-dark" id="jak-pracujemy" aria-labelledby="how-title">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow">Jak pracujemy</p>
+        <h2 id="how-title">Najpierw poznajemy Twój proces.<br>Potem budujemy narzędzie.</h2>
+        <p class="sub">Nie zaczynamy od programowania. Zaczynamy od hali, od ludzi i od drogi, jaką przechodzi zlecenie.</p>
+      </div>
+
+      <div class="stages reveal" id="stages">
+        <div class="stages-line"><i></i></div>
+        <article class="stage">
+          <div class="stage-num">1</div>
+          <span class="badge free">Bezpłatnie</span>
+          <h3>Rozmowa i wstępna diagnoza</h3>
+          <p>Rozmawiamy o Twoich celach i problemach, odwiedzamy halę i biuro. Mówimy, gdzie widzimy największy potencjał i od czego warto zacząć.</p>
+        </article>
+        <article class="stage">
+          <div class="stage-num">2</div>
+          <span class="badge">Start współpracy</span>
+          <h3>Analiza i projekt</h3>
+          <p>Poznajemy proces w szczegółach, rozmawiamy z pracownikami, rysujemy mapę procesu i pokazujemy makiety ekranów, zanim cokolwiek zbudujemy.</p>
+        </article>
+        <article class="stage">
+          <div class="stage-num">3</div>
+          <span class="badge">Start współpracy</span>
+          <h3>Wdrożenie pilotażowe</h3>
+          <p>Uruchamiamy pierwsze narzędzie w jednym obszarze. Ludzie używają go od razu, a my poprawiamy je na podstawie ich uwag.</p>
+        </article>
+        <article class="stage">
+          <div class="stage-num">4</div>
+          <span class="badge badge-sub">Abonament</span>
+          <h3>Utrzymanie i rozwój</h3>
+          <p>Dbamy o działanie, bezpieczeństwo i wsparcie. Krok po kroku rozszerzamy rozwiązanie na kolejne obszary firmy.</p>
+        </article>
+      </div>
+
+      <h3 class="subhead">Co dzieje się podczas analizy</h3>
+      <div class="steps">
+        <div class="step reveal"><svg class="ic"><use href="#i-route"/></svg><h4>Śledzimy jedno zlecenie</h4><p>Od zapytania klienta do wysyłki, krok po kroku, na miejscu.</p></div>
+        <div class="step reveal"><svg class="ic"><use href="#i-users"/></svg><h4>Rozmawiamy z ludźmi</h4><p>Operator, brygadzista, planista, magazyn, biuro. Pytamy, co ich spowalnia.</p></div>
+        <div class="step reveal"><svg class="ic"><use href="#i-files"/></svg><h4>Zbieramy dokumenty</h4><p>Każdy arkusz, formularz i wydruk. Sprawdzamy, kto co przepisuje i dokąd to trafia.</p></div>
+        <div class="step reveal"><svg class="ic"><use href="#i-map"/></svg><h4>Rysujemy mapę procesu</h4><p>Jeden czytelny obraz z zaznaczonymi miejscami, w których traci się czas i informacje.</p></div>
+        <div class="step reveal"><svg class="ic"><use href="#i-gauge"/></svg><h4>Mierzymy stan zero</h4><p>Ile to dziś trwa i ile jest błędów. Po wdrożeniu pokażemy różnicę w liczbach.</p></div>
+        <div class="step reveal"><svg class="ic"><use href="#i-layout"/></svg><h4>Pokazujemy makiety</h4><p>Pracownicy widzą swoje przyszłe ekrany i mówią, co zmienić, zanim zaczniemy budować.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CO BUDUJEMY ============ -->
+  <section class="section" id="co-budujemy" aria-labelledby="build-title">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow">Co budujemy</p>
+        <h2 id="build-title">Narzędzia do konkretnych problemów</h2>
+        <p class="sub">Z takich elementów składamy system zarządzania dopasowany do Twojej firmy, po kolei i tylko tam, gdzie to ma sens.</p>
+      </div>
+
+      <div class="areas reveal">
+        <div class="area-tabs" role="tablist" aria-label="Obszary" id="areaTabs"></div>
+        <div class="area-panel" id="areaPanel" role="tabpanel">
+          <div class="area-text">
+            <h3 id="areaTitle"></h3>
+            <div class="area-ba">
+              <div class="area-before"><span class="lbl">Dziś</span><p id="areaToday"></p></div>
+              <div class="area-after"><span class="lbl">Z nami</span><p id="areaUs"></p></div>
+            </div>
+          </div>
+          <div class="area-mock">
+            <div class="mock" id="areaMock"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCENARIUSZ ============ -->
+  <section class="section section-tint" aria-labelledby="story-title">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow">Scenariusz przykładowy</p>
+        <h2 id="story-title">Jak to może wyglądać w praktyce</h2>
+        <p class="sub">Zakład produkujący konstrukcje stalowe, ok. 35 osób. Zlecenia na papierowych kartach, plan w Excelu, kontrola jakości w zeszycie.</p>
+      </div>
+      <ol class="story">
+        <li class="reveal">
+          <div class="when">Tydzień 0</div>
+          <div class="what"><h4>Rozmowa i wizyta</h4><p>Właściciel mówi: „Nie wiem, gdzie są moje zlecenia, dopóki ktoś nie pójdzie sprawdzić”. Po wizycie na hali proponujemy zacząć od kart zleceń.</p></div>
+        </li>
+        <li class="reveal">
+          <div class="when">Tydzień 1–2</div>
+          <div class="what"><h4>Analiza</h4><p>Śledzimy kilka zleceń. Okazuje się, że te same dane przepisywane są w sześciu miejscach, a planista codziennie spędza ponad godzinę na ustalaniu statusów.</p></div>
+        </li>
+        <li class="reveal">
+          <div class="when">Tydzień 3–6</div>
+          <div class="what"><h4>Pilotaż na jednym wydziale</h4><p>Cyfrowe karty zleceń z kodami QR i tablety przy stanowiskach. Operatorzy zgłaszają postęp jednym dotknięciem.</p></div>
+        </li>
+        <li class="reveal">
+          <div class="when">Miesiąc 3</div>
+          <div class="what"><h4>Cały zakład widzi to samo</h4><p>Tablica statusów w biurze, automatyczny raport tygodniowy. Kolejny krok: protokoły kontroli jakości.</p></div>
+        </li>
+      </ol>
+      <p class="note">Scenariusz poglądowy, który pokazuje typowy przebieg współpracy. Każda firma jest inna i każdy plan powstaje po rozmowie.</p>
+    </div>
+  </section>
+
+  <!-- ============ WSPÓŁPRACA / MODEL ============ -->
+  <section class="section" id="wspolpraca" aria-labelledby="model-title">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow">Współpraca</p>
+        <h2 id="model-title">Bez dużej inwestycji na start</h2>
+        <p class="sub">Nie sprzedajemy jednorazowego projektu, który potem zostaje bez opieki. Dostarczamy działające narzędzie i dbamy o nie za stałą miesięczną opłatę.</p>
+      </div>
+
+      <div class="model">
+        <div class="cost-compare reveal" aria-label="Porównanie rozkładu kosztów w czasie (poglądowo)">
+          <div class="cc">
+            <div class="cc-title">Typowe wdrożenie dużego systemu</div>
+            <div class="cc-bars">
+              <i style="--h:100%" class="peak"></i><i style="--h:44%"></i><i style="--h:18%"></i><i style="--h:18%"></i><i style="--h:18%"></i><i style="--h:18%"></i><i style="--h:18%"></i><i style="--h:18%"></i><i style="--h:18%"></i><i style="--h:18%"></i><i style="--h:18%"></i><i style="--h:18%"></i>
+            </div>
+            <div class="cc-axis"><span>start</span><span>czas →</span></div>
+          </div>
+          <div class="cc">
+            <div class="cc-title">Współpraca z nami</div>
+            <div class="cc-bars">
+              <i style="--h:0%" class="zero"></i><i style="--h:22%" class="ours"></i><i style="--h:22%" class="ours"></i><i style="--h:22%" class="ours"></i><i style="--h:22%" class="ours"></i><i style="--h:22%" class="ours"></i><i style="--h:22%" class="ours"></i><i style="--h:22%" class="ours"></i><i style="--h:22%" class="ours"></i><i style="--h:22%" class="ours"></i><i style="--h:22%" class="ours"></i><i style="--h:22%" class="ours"></i>
+            </div>
+            <div class="cc-axis"><span>bezpłatna rozmowa</span><span>czas →</span></div>
+          </div>
+          <p class="note small">Ilustracja poglądowa rozkładu kosztów w czasie.</p>
+        </div>
+
+        <ol class="plan reveal">
+          <li>
+            <div class="plan-k">Na początek</div>
+            <h4>Bezpłatna rozmowa i wstępna diagnoza</h4>
+            <p>Poznajemy się, oglądamy proces i mówimy szczerze, czy i jak możemy pomóc.</p>
+          </li>
+          <li>
+            <div class="plan-k">Pierwsze 3 miesiące</div>
+            <h4>Start współpracy</h4>
+            <p>Analiza, projekt i uruchomienie pierwszego narzędzia. Umowa na minimum 3 miesiące.</p>
+          </li>
+          <li>
+            <div class="plan-k">Dalej</div>
+            <h4>Abonament miesięczny</h4>
+            <p>Stały koszt, w którym jest wszystko, czego potrzebujesz na co dzień. Jeśli nie jesteś zadowolony, możesz zrezygnować.</p>
+          </li>
+        </ol>
+      </div>
+
+      <div class="included reveal">
+        <h3>W abonamencie</h3>
+        <ul>
+          <li><svg class="ic"><use href="#i-server"/></svg>Serwery i infrastruktura po naszej stronie</li>
+          <li><svg class="ic"><use href="#i-refresh"/></svg>Utrzymanie i aktualizacje</li>
+          <li><svg class="ic"><use href="#i-shield"/></svg>Bezpieczeństwo i kopie zapasowe</li>
+          <li><svg class="ic"><use href="#i-support"/></svg>Wsparcie dla Twoich pracowników</li>
+          <li><svg class="ic"><use href="#i-layout"/></svg>Bieżące poprawki i rozwój</li>
+          <li><svg class="ic"><use href="#i-key"/></svg>Nie potrzebujesz własnego informatyka</li>
+        </ul>
+      </div>
+
+      <div class="trust">
+        <div class="trust-item reveal"><svg class="ic"><use href="#i-db"/></svg><div><h4>Twoje dane są Twoje</h4><p>W każdej chwili możesz je pobrać w otwartym formacie, także po zakończeniu współpracy.</p></div></div>
+        <div class="trust-item reveal"><svg class="ic"><use href="#i-exit"/></svg><div><h4>Możesz zrezygnować</h4><p>Po okresie początkowym współpraca trwa, bo przynosi efekty, a nie dlatego, że wiąże umowa.</p></div></div>
+        <div class="trust-item reveal"><svg class="ic"><use href="#i-box"/></svg><div><h4>Możliwy wykup</h4><p>Wolisz mieć rozwiązanie na własność? Możemy je sprzedać w całości.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KIM JESTEŚMY ============ -->
+  <section class="section section-tint" id="o-nas" aria-labelledby="team-title">
+    <div class="container team">
+      <div class="team-art reveal" aria-hidden="true">
+        <svg viewBox="0 0 440 320">
+          <circle cx="150" cy="160" r="120" class="venn a"/>
+          <circle cx="290" cy="160" r="120" class="venn b"/>
+          <text x="98" y="152" class="venn-t">Produkcja</text>
+          <text x="98" y="174" class="venn-s">przemysłowa</text>
+          <text x="342" y="152" class="venn-t">Technologie</text>
+          <text x="342" y="174" class="venn-s">informacyjne</text>
+          <g class="venn-mid">
+            <circle cx="220" cy="160" r="28"/>
+            <path d="M209 168l11-18 11 18" />
+          </g>
+        </svg>
+      </div>
+      <div class="team-copy">
+        <p class="eyebrow">Kim jesteśmy</p>
+        <h2 id="team-title">Znamy halę i znamy IT</h2>
+        <p class="sub">Łączymy doświadczenie z produkcji przemysłowej w małych i średnich zakładach z wieloletnim doświadczeniem w tworzeniu oprogramowania. Nie trzeba nam tłumaczyć, czym jest przezbrojenie, reklamacja czy zmiana. Nie trzeba też tłumaczyć programiście, czego potrzebuje majster.</p>
+        <ul class="team-list">
+          <li><svg class="ic"><use href="#i-check"/></svg>Rozmawiamy językiem hali, nie żargonem IT</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Projektujemy razem z ludźmi, którzy będą z narzędzi korzystać</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Współpracujemy z partnerami, gdy potrzebne są dodatkowe kompetencje</li>
+        </ul>
+        <div class="why-now">
+          <h4>Dlaczego to jest możliwe właśnie teraz?</h4>
+          <p>Nowoczesne narzędzia, w tym sztuczna inteligencja, pozwalają budować oprogramowanie znacznie szybciej niż jeszcze kilka lat temu. Dzięki temu rozwiązanie szyte na miarę jednej firmy przestało być luksusem zarezerwowanym dla największych.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="container narrow">
+      <div class="section-head center">
+        <p class="eyebrow">Pytania</p>
+        <h2 id="faq-title">Częste pytania</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Mamy już program księgowy i Excela. Musimy z nich rezygnować?</summary>
+          <p>Nie. Zostawiamy to, co działa, i łączymy z nowymi narzędziami. Często największy zysk daje samo to, że dane przestają być przepisywane ręcznie między programami.</p>
+        </details>
+        <details>
+          <summary>Ile trwa, zanim zobaczymy pierwsze efekty?</summary>
+          <p>Zaczynamy od jednego, dobrze wybranego obszaru. Pierwsze narzędzie trafia do ludzi zwykle w ciągu kilku tygodni od startu współpracy.</p>
+        </details>
+        <details>
+          <summary>Nasi pracownicy nie lubią komputerów. Czy sobie poradzą?</summary>
+          <p>Właśnie dlatego projektujemy razem z nimi. Duże przyciski, kody QR, minimum pisania. Narzędzie ma być prostsze niż obecny papier, inaczej nie spełnia swojej roli.</p>
+        </details>
+        <details>
+          <summary>Gdzie są przechowywane nasze dane?</summary>
+          <p>Na bezpiecznej infrastrukturze, o którą dbamy my: z kopiami zapasowymi i kontrolą dostępu. Dane należą do Ciebie i w każdej chwili możesz je pobrać.</p>
+        </details>
+        <details>
+          <summary>Co, jeśli zechcemy zakończyć współpracę?</summary>
+          <p>Po okresie początkowym możesz zrezygnować z abonamentu. Przekażemy Ci wszystkie Twoje dane w otwartym formacie. Jeśli wolisz zachować rozwiązanie na stałe, możliwy jest jego wykup.</p>
+        </details>
+        <details>
+          <summary>Czy potrzebujemy nowego sprzętu?</summary>
+          <p>Często wystarczą zwykłe tablety lub telefony i drukarka etykiet. Co jest potrzebne, ustalamy podczas analizy i doradzamy, co wybrać.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KONTAKT ============ -->
+  <section class="cta" id="kontakt" aria-labelledby="cta-title">
+    <div class="container cta-inner">
+      <div>
+        <h2 id="cta-title">Porozmawiajmy o Twoim procesie</h2>
+        <p>Pierwsza rozmowa i wstępna diagnoza są bezpłatne. Opowiedz nam, co dziś najbardziej Cię spowalnia, a powiemy, od czego warto zacząć.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-primary btn-lg" href="mailto:kontakt@example.pl?subject=Bezp%C5%82atna%20rozmowa">Umów bezpłatną rozmowę <svg class="ic"><use href="#i-arrow"/></svg></a>
+        <div class="cta-contacts">
+          <a href="mailto:kontakt@example.pl"><svg class="ic"><use href="#i-mail"/></svg>kontakt@example.pl</a>
+          <a href="tel:+48000000000"><svg class="ic"><use href="#i-phone"/></svg>+48 000 000 000</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="logo small"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M9 22l7-12 7 12"/></svg></span><span class="brand-name">Activations</span></div>
+    <p>Oprogramowanie szyte na miarę dla małych i średnich firm produkcyjnych.</p>
+    <p class="copy">© <span id="year"></span> Activations</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
